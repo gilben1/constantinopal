@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Rubik Variable', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0 auto;
+    background: #14213d;
+    color: #f3f3f3;
+}
+
+.defaults {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: #cfcfcf; 
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #cfcfcf; 
+}
+
+#splash-img {
+  height: 100px;
+  animation: jello 2s ease 25ms infinite alternate forwards;
+}
+
+#splash-enter {
+    text-align: center;
+    border: 2px solid red;
+    border-style: dotted;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#splash-enter-wrap {
+    text-align: center;
+    animation: hyper 2s ease 25ms infinite alternate forwards;
+}
+
+@keyframes hyper {
+  0% {
+	transform: translate(0);
+  }
+
+  20% {
+	transform: translate(2px, -2px);
+  }
+
+  40% {
+	transform: translate(2px, 2px);
+  }
+
+  60% {
+	transform: translate(-2px, 2px);
+  }
+
+  80% {
+	transform: translate(-2px, -2px);
+  }
+
+  100% {
+	transform: translate(0);
+  }
+}
+
+@keyframes jello {
+  0% {
+	transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+	transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+	transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+	transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+	transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+	transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+	transform: scale3d(1, 1, 1);
+  }
+}
