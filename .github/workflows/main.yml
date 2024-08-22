@@ -8,13 +8,9 @@ jobs:
     steps:      
       - name: "Check-out"
         uses: actions/checkout@v3
-      - name: "✏️ Generate release changelog"
-        uses: heinrichreimer/action-github-changelog-generator@v2.3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: "CAT changelog to file"
+      - name: "Run git log to file"
         # You may pin to the exact commit or the version.
-        run: cat CHANGELOG.md > "/home/runner/work/constantinopal/constantinopal/public/CHANGELOG.md"
+        run: git log -1 --pretty=format:"%s" > "/home/runner/work/constantinopal/constantinopal/public/CHANGELOG.md"
         # You may pin to the exact commit or the version.
         # uses: bcomnes/deploy-to-neocities@e3fac0f3dea69f575e7e30e39afb18d4dad01a09
       - name: Deploy to Neocities
