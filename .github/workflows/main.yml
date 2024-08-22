@@ -12,7 +12,7 @@ jobs:
           fetch-depth: 0
       - name: "Run git log to file"
         # You may pin to the exact commit or the version.
-        run: git log main --stat --pretty=format:"%ai - %s" > "/home/runner/work/constantinopal/constantinopal/public/CHANGELOG.md"
+        run: git log main --stat --pretty=format:"%ai - %s" -- "public/**" > "/home/runner/work/constantinopal/constantinopal/public/changelog/index.html"
         # You may pin to the exact commit or the version.
         # uses: bcomnes/deploy-to-neocities@e3fac0f3dea69f575e7e30e39afb18d4dad01a09
       - name: Deploy to Neocities
