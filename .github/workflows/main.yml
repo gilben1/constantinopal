@@ -10,13 +10,13 @@ jobs:
         uses: heinrichreimer/action-github-changelog-generator@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
       - name: Copy directory
         # You may pin to the exact commit or the version.
         uses: MadaraUchiha/copy-action@0.0.1
         with:
           source: "/github/workspace/CHANGELOG.md"
           target: "/home/runner/work/constantinopal/constantinopal/public/CHANGELOG.md"
-      - uses: actions/checkout@v3
       - name: Deploy to Neocities
         # You may pin to the exact commit or the version.
         # uses: bcomnes/deploy-to-neocities@e3fac0f3dea69f575e7e30e39afb18d4dad01a09
