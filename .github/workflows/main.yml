@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: "Run git log to file"
         # You may pin to the exact commit or the version.
-        run: git log -1 --pretty=format:"%s" > "/home/runner/work/constantinopal/constantinopal/public/CHANGELOG.md"
+        run: git log main --stat --pretty=format:"%s" > "/home/runner/work/constantinopal/constantinopal/public/CHANGELOG.md"
         # You may pin to the exact commit or the version.
         # uses: bcomnes/deploy-to-neocities@e3fac0f3dea69f575e7e30e39afb18d4dad01a09
       - name: Deploy to Neocities
