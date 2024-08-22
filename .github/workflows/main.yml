@@ -3,6 +3,13 @@ on:
     branches:
       - main
 jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "✏️ Generate release changelog"
+        uses: heinrichreimer/action-github-changelog-generator@v2.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} 
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -20,4 +27,5 @@ jobs:
         cleanup: true
         # A glob string that prevents matched files from ever being deleted.
         #protected_files: # optional
+        
               
