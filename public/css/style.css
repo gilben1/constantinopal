@@ -36,16 +36,21 @@ a:visited {
 }
 
 #splash-enter {
-    text-align: center;
-    border: 2px solid red;
-    border-style: dotted;
-    border-radius: 5px;
-    margin: auto;
+  text-align: center;
+  border: 2px solid red;
+  border-style: dotted;
+  border-radius: 5px;
+  margin: auto;
 }
 
 #splash-enter-wrap {
-    text-align: center;
-    animation: hyper 2s ease 25ms infinite alternate forwards;
+  text-align: center;
+  animation: hyper 2s ease 25ms infinite alternate forwards;
+}
+
+#changelog-list {
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 @keyframes hyper {
