@@ -47,9 +47,14 @@
     for (const [date, commits] of dateMap) {
         let dateDiv = document.createElement("div")
         dateDiv.id = "changelog-list"
-        dateDiv.appendChild(document.createTextNode(date))
+
+        let dateText = document.createElement("h3")
+        dateText.innerText = date
+
+        //dateDiv.appendChild(dateText)
 
         let commitList = document.createElement("ul")
+        commitList.appendChild(dateText)
         for (const commit of commits) {
             let message = document.createElement("li")
             let messageString = `${commit.message} - ${commit.time}`

@@ -1,3 +1,6 @@
+/* || GENERAL STYLES*/
+
+
 html {
     font-size: 62.5%;
     max-width: 100%;
@@ -6,52 +9,71 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Rubik Variable', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0 auto;
     background: #14213d;
     color: #f3f3f3;
 }
 
-.defaults {
+
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
     padding: 20px;
-}
-
-h1 {
-    text-align: center;
 }
 
 a {
     color: #cfcfcf; 
     text-decoration: underline;
+    text-align: center;
 }
 
 a:visited {
     color: #cfcfcf; 
 }
 
-#splash-img {
-  height: 100px;
-  animation: jello 2s ease 25ms infinite alternate forwards;
-}
-
-#splash-enter {
-  text-align: center;
-  border: 2px solid red;
-  border-style: dotted;
-  border-radius: 5px;
-  margin: auto;
-}
-
-#splash-enter-wrap {
-  text-align: center;
-  animation: hyper 2s ease 25ms infinite alternate forwards;
-}
-
-#changelog-list {
+ul,
+ol {
   margin-left: 25%;
-  margin-right: 25%;
+  margin-right: 0%;
 }
+
+img {
+  width: 50%;
+}
+
+/* || BASIC COMBINATORS */
+
+/* One down list, remove the margins */
+ul > li > ul {
+  /*border-top: 5px solid red;*/
+  margin-left: 0%;
+  margin-right: 0%;
+  list-style: square
+}
+
+/* header within an unordered list */
+ul > h3 {
+  text-align: left;
+  padding: 0px;
+  margin-right: 48%;
+  border-bottom: 2px solid coral;
+}
+
+/* || UTILITIES */
+
+/* Navigation at the bottom of most pages */
+.bottomnav {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+/* || ANIMATIONS */
 
 @keyframes hyper {
   0% {
