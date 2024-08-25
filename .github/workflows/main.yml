@@ -13,7 +13,7 @@ jobs:
       - run: npm i markdown-to-html-cli -g
       - name: "Run git log to file"
         # You may pin to the exact commit or the version.
-        run: git log main --stat --pretty=format:"%ai - %s" -- "public/**" > "/home/runner/work/constantinopal/constantinopal/public/changelog/changelog.txt"
+        run: git log main --stat --pretty=format:">==%ai - %s%n===%n%b===" -- "public/**" > "/home/runner/work/constantinopal/constantinopal/public/changelog/changelog.txt"; echo "" >>  "/home/runner/work/constantinopal/constantinopal/public/changelog/changelog.txt"
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v2.0.2
         with:

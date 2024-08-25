@@ -19,9 +19,16 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     text-align: center;
     padding: 20px;
+}
+
+p {
+  margin: auto;
+  margin-left: 5px;
 }
 
 a {
@@ -60,6 +67,12 @@ ul > h3 {
   padding: 0px;
   margin-right: 48%;
   border-bottom: 2px solid coral;
+}
+li > h6 {
+  text-align: left;
+  padding: 0px;
+  font-style: italic;
+  
 }
 
 /* || UTILITIES */
