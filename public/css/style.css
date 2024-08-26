@@ -32,13 +32,13 @@ p {
 }
 
 a {
-    color: #cfcfcf; 
+    color: white; 
     text-decoration: underline;
     text-align: center;
 }
 
 a:visited {
-    color: #cfcfcf; 
+    color: white; 
 }
 
 ul,
@@ -78,12 +78,13 @@ li > h6 {
 /* || UTILITIES */
 
 /* Navigation at the bottom of most pages */
-.bottomnav {
+.nav {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding-left: 25%;
-  padding-right: 25%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: black;
 }
 
 .rainbow-shadow {
