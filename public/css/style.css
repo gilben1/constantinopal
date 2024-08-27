@@ -123,7 +123,13 @@ li > h6 {
   margin-bottom: 40px;
 }
 
-
+/* || CHANGELOG */
+.changelog * > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: smaller;
+  text-align: left;
+}
 
 /* || ANIMATIONS */
 .shadow-pop-tr {
