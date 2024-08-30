@@ -3,7 +3,7 @@
     let changeDiv = document.getElementById('change-div')
 
     // load the text from the changelog
-    const text = await (await fetch("./changelog.txt")).text();
+    const text = await (await fetch("./changelog/changelog.txt")).text();
 
     let commits = text.split('>==').slice(1)
     let dates = commits.map((x) => 
