@@ -132,18 +132,26 @@ li > h6 {
 
 div span#splash-a {
   display: inline;
+  cursor: default;
+  user-select: none;
 }
 
 div:hover span#splash-a {
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 div span#splash-b {
   display: none;
+  cursor: default;
+  user-select: none;
 }
 
 div:hover span#splash-b {
   display: inline;
+  cursor: default;
+  user-select: none;
 }
 
 /* || HOME PAGE */
