@@ -130,6 +130,22 @@ li > h6 {
   text-transform: uppercase;
 }
 
+div span#splash-a {
+  display: inline;
+}
+
+div:hover span#splash-a {
+  display: none;
+}
+
+div span#splash-b {
+  display: none;
+}
+
+div:hover span#splash-b {
+  display: inline;
+}
+
 /* || HOME PAGE */
 
 .home-img {
