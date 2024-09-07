@@ -32,7 +32,7 @@ p {
 
 a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
   text-align: center;
 }
 
@@ -97,11 +97,16 @@ li>h6 {
 /* Navigation at the bottom of most pages */
 .nav {
   text-align: center;
-  display: grid;
+  justify-content: center;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-left: 25%;
   margin-right: 25%;
   background-color: black;
+}
+
+.nav > * {
+  margin: 5px 5px;
 }
 
 
@@ -115,14 +120,30 @@ li>h6 {
     violet 30px 30px 5px
 }
 
+.homeHeader {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.homeHeader:hover {
+  background-color: black;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+div:has(> .homeHeader) {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: yellow solid 5px;
+}
 
 /* || SPLASH PAGE */
-
-#splash-img {
-  width: 50%;
-  margin-left: 25%;
-  box-shadow: black 10px 10px 5px;
-}
 
 .text-container {
   background-color: #1e1e1e;
