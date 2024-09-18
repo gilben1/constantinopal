@@ -200,7 +200,7 @@ div:hover span#splash-b {
   margin: auto
 }
 
-#main-img-div {
+.home-img-div {
   display: grid;
   grid-template-columns: 0.3fr 1.5fr 0.3fr;
   grid-template-rows: 1fr;
@@ -210,6 +210,24 @@ div:hover span#splash-b {
     ". . .";
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.home-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: center;
+}
+
+.home-item {
+  margin: 10px;
+  padding: 1em;
+  border: yellow solid 2px;
+  border-radius: 1em;
 }
 
 /* || CHANGELOG */
